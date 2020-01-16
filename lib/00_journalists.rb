@@ -73,10 +73,10 @@ end
 # Trie la liste de handle par ordre alphabétique.
 def sort(journalists)
   puts "Trie la liste de handle par ordre alphabétique."
-  puts "Voici la liste de journalistes triés par ordre alphabétique : #{}"
+  puts "Voici la liste de journalistes triés par ordre alphabétique : #{journalists.sort}"
 end
 
-#sort(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+sort(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Quels sont les 50 handles les plus courts de ce array ?
