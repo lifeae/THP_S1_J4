@@ -26,6 +26,7 @@ end
 how_much_journalists(journalists)
 
 
+
 # Combien d'handle contiennent un numéro ?
 def how_much_handle_with_number(journalists)
   count = 0
@@ -42,13 +43,22 @@ end
 how_much_handle_with_number(journalists)
 
 
+
 # Combien d'handle contiennent les 4 lettres du prénom "Aude" à la suite (sans prendre en compte les majuscules) ?
 def how_much_handle_with_Aude(journalists)
+  count = 0
+    journalists.each do |email|
+      if email.match(/[a][u][d][e]/)
+        count +=1
+      end
+    end
   puts "Combien d'handle contiennent les 4 lettres du prénom 'Aude' à la suite (sans prendre en compte les majuscules) ?"
-  puts "Il y en a #{}"
+  puts "Il y en a #{count}"
 end
 
-#how_much_handle_with_Aude(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+how_much_handle_with_Aude(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+
+
 
 
 def how_much_begin_with_maj(journalists)
@@ -66,13 +76,23 @@ end
 how_much_begin_with_maj(journalists)
 
 
+
+
 # Combien contiennent une majuscule ?
 def how_much_have_maj(journalists)
+  count = 0
+  journalists.each do |email|
+    if email.match(/[A-Z]/)
+        count +=1
+    end
+  end
   puts "Combien contiennent une majuscule ?"
-  puts "Il y en a #{}"
+  puts "Il y en a #{count}"
 end
 
-#how_much_have_maj(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+how_much_have_maj(journalists)
+
+
 
 
 # Combien y a-t-il de underscore _ dans tous les pseudos confondus ?
@@ -88,7 +108,9 @@ def how_much_underscore(journalists)
   puts
 end
 
-how_much_underscore(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+how_much_underscore(journalists)
+
+
 
 
 # Trie la liste de handle par ordre alphabétique.
@@ -98,7 +120,9 @@ def sort(journalists)
   puts
 end
 
-sort(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+sort(journalists)
+
+
 
 
 # Quels sont les 50 handles les plus courts de ce array ?
@@ -108,6 +132,8 @@ def fifty_shortest_handles(journalists)
 end
 
 #fifty_shortest_handles(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+
+
 
 
 # Quelle est la position dans l'array de la personne @epenser ?
