@@ -19,7 +19,8 @@ journalists = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau
 # Combien y a-t-il de journalistes dans ce array ?
 def how_much_journalists(journalists)
   puts "Combien y a-t-il de journalistes dans ce array ?"
-  puts "Il y en a #{journalists.size}"  
+  puts "Il y en a #{journalists.size}"
+  puts
 end
 
 how_much_journalists(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
@@ -33,9 +34,9 @@ def how_much_handle_with_number(journalists)
       count +=1
     end
   end
-
   puts "Combien d'handle contiennent un numéro ?"
   puts "Il y en a #{count}"
+  puts
 end
 
 how_much_handle_with_number(journalists)
@@ -50,13 +51,19 @@ end
 #how_much_handle_with_Aude(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
-# Combien commencent par une majuscule (première lettre juste après le @) ?
 def how_much_begin_with_maj(journalists)
-  puts "Combien commencent par une majuscule (première lettre juste après le @) ?"
-  puts "Il y en a #{}"
+  count = 0
+  journalists.each do |email|
+    if email.match(/@[A-Z]/)
+      count += 1
+      end
+    end
+puts "Combien commencent par une majuscule (première lettre juste après le @) ?"
+puts "Il y en a #{count}"
+puts
 end
 
-#how_much_begin_with_maj(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+how_much_begin_with_maj(journalists)
 
 
 # Combien contiennent une majuscule ?
@@ -71,16 +78,24 @@ end
 # Combien y a-t-il de underscore _ dans tous les pseudos confondus ?
 def how_much_underscore(journalists)
   puts "Combien y a-t-il de underscore _ dans tous les pseudos confondus ?"
-  puts "Il y en a #{}"
+  underscore = 0
+  journalists.each do |handle|
+    if handle.match(/_/)
+      underscore += 1
+    end
+  end
+  puts "Il y a au total, #{underscore} underscore."
+  puts
 end
 
-#how_much_underscore(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+how_much_underscore(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Trie la liste de handle par ordre alphabétique.
 def sort(journalists)
   puts "Trie la liste de handle par ordre alphabétique."
-  puts "Voici la liste de journalistes triés par ordre alphabétique : #{journalists.sort}"
+  puts "Voici la liste de journalistes triés par ordre alphabétique : \n#{journalists.sort}"
+  puts
 end
 
 sort(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
@@ -99,6 +114,7 @@ end
 def position_epenser(journalists)
   puts "Quelle est la position dans l'array de la personne @epenser ?"
   puts "@epenser est en position #{journalists.index("@epenser")}"
+  puts
 end
 
 position_epenser(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
