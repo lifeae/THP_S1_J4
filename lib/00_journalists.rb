@@ -20,10 +20,7 @@ journalists = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau
 def how_much_journalists(journalists)
   puts "Combien y a-t-il de journalistes dans ce array ?"
   puts "Il y en a #{journalists.size}"
-<<<<<<< HEAD
   puts
-=======
->>>>>>> 9fb54a4b4f55a5c430427ce3749da5ea51ad40cd
 end
 
 how_much_journalists(journalists)
@@ -55,7 +52,6 @@ end
 
 
 def how_much_begin_with_maj(journalists)
-<<<<<<< HEAD
   count = 0
   journalists.each do |email|
     if email.match(/@[A-Z]/)
@@ -68,20 +64,6 @@ puts
 end
 
 how_much_begin_with_maj(journalists)
-=======
-    count = 0
-    journalists.each do |email|
-      if email.match(/@[A-Z]/)
-        count +=1
-
-        end
-      end
-  puts "Combien commencent par une majuscule (première lettre juste après le @) ?"
-  puts "Il y en a #{count}"
-end
-
-how_much_begin_with_maj(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
->>>>>>> 9fb54a4b4f55a5c430427ce3749da5ea51ad40cd
 
 
 # Combien contiennent une majuscule ?
