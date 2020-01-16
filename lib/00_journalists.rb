@@ -63,7 +63,7 @@ end
 
 # Combien y a-t-il de underscore _ dans tous les pseudos confondus ?
 def how_much_underscore(journalists)
-  puts "Combien contiennent une majuscule ?"
+  puts "Combien y a-t-il de underscore _ dans tous les pseudos confondus ?"
   puts "Il y en a #{}"
 end
 
@@ -81,8 +81,8 @@ sort(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 # Quels sont les 50 handles les plus courts de ce array ?
 def fifty_shortest_handles(journalists)
-  puts "Trie la liste de handle par ordre alphabétique."
-  puts "Voici la liste de journalistes triés par ordre alphabétique : #{}"
+  puts "Quels sont les 50 handles les plus courts de ce array ?"
+  puts "Voici la liste des 50 handles les plus courts : #{}"
 end
 
 #fifty_shortest_handles(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
