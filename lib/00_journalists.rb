@@ -27,11 +27,18 @@ how_much_journalists(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 # Combien d'handle contiennent un numéro ?
 def how_much_handle_with_number(journalists)
+  count = 0
+  journalists.each do |email|
+    if email.match(/[0-9]/)
+      count +=1
+    end
+  end
+
   puts "Combien d'handle contiennent un numéro ?"
-  puts "Il y en a #{}"
+  puts "Il y en a #{count}"
 end
 
-#how_much_handle_with_number(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+how_much_handle_with_number(journalists)
 
 
 # Combien d'handle contiennent les 4 lettres du prénom "Aude" à la suite (sans prendre en compte les majuscules) ?
