@@ -1,5 +1,7 @@
 Projet : Data scientist de THP
 
+by: Romain Leporatti & Brice Gindre (Peer-Programming)
+
 lib/00_journalists.rb
   Une liste de pseudos de journalistes est rentrée dans un tableau. Le programme doit répondre à une série de questions comme :
     Combien y a-t-il de journalistes dans ce array ?
