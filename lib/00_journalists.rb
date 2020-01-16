@@ -40,4 +40,10 @@ journalists.collect {|x| x + ""}
 # Quels sont les 50 handles les plus courts de ce array ?
 
 # Quelle est la position dans l'array de la personne @epenser ?
-journalists.index("@epenser")
+def position_epenser(journalists)
+  puts "Quelle est la position dans l'array de la personne @epenser ?"
+  puts "@epenser est en position #{journalists.index("@epenser")}"
+end
+
+position_epenser(journalists)
+  
