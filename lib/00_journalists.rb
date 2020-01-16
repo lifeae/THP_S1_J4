@@ -31,7 +31,7 @@ def how_much_handle_with_number(journalists)
   puts "Il y en a #{}"
 end
 
-how_much_handle_with_number(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+#how_much_handle_with_number(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Combien d'handle contiennent les 4 lettres du prénom "Aude" à la suite (sans prendre en compte les majuscules) ?
@@ -40,7 +40,7 @@ def how_much_handle_with_Aude(journalists)
   puts "Il y en a #{}"
 end
 
-how_much_handle_with_Aude(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+#how_much_handle_with_Aude(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Combien commencent par une majuscule (première lettre juste après le @) ?
@@ -49,7 +49,7 @@ def how_much_begin_with_maj(journalists)
   puts "Il y en a #{}"
 end
 
-how_much_begin_with_maj(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+#how_much_begin_with_maj(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Combien contiennent une majuscule ?
@@ -58,7 +58,7 @@ def how_much_have_maj(journalists)
   puts "Il y en a #{}"
 end
 
-how_much_have_maj(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+#how_much_have_maj(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Combien y a-t-il de underscore _ dans tous les pseudos confondus ?
@@ -67,7 +67,7 @@ def how_much_underscore(journalists)
   puts "Il y en a #{}"
 end
 
-how_much_underscore(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+#how_much_underscore(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Trie la liste de handle par ordre alphabétique.
@@ -76,7 +76,7 @@ def sort(journalists)
   puts "Voici la liste de journalistes triés par ordre alphabétique : #{}"
 end
 
-sort(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+#sort(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Quels sont les 50 handles les plus courts de ce array ?
@@ -85,7 +85,7 @@ def fifty_shortest_handles(journalists)
   puts "Voici la liste de journalistes triés par ordre alphabétique : #{}"
 end
 
-fifty_shortest_handles(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
+#fifty_shortest_handles(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 
 
 # Quelle est la position dans l'array de la personne @epenser ?
@@ -110,4 +110,4 @@ position_epenser(journalists) # DELETE AT THE END WHEN EVERYTHIING IS DONE
 #  position_epenser(journalists)
 #end
 
-perform
+#perform
